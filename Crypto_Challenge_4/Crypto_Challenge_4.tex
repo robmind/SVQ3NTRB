@@ -1,0 +1,80 @@
+\documentclass[12pt]{amsart}
+
+\addtolength{\hoffset}{-2.25cm}
+\addtolength{\textwidth}{4.5cm}
+\addtolength{\voffset}{-2.5cm}
+\addtolength{\textheight}{5cm}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{15pt}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks = true, linkcolor = black, citecolor = black, final]{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+\newcommand{\ds}{\displaystyle}
+\DeclareMathOperator{\sech}{sech}
+\setlength{\parindent}{0in}
+\pagestyle{empty}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\scshape IT754A} \hfill {\scshape \large Crypto Challenge 4} \hfill {\scshape Hakan Ilgar}
+
+\smallskip
+\hrule
+\bigskip
+\bigskip
+
+{\bf Readable cleartext (i.e., formatted with blank spaces, dashes, numbers, and so on)}
+\bigskip
+
+\noindent
+IAMASMUCHINTHEDARKASEVER. WEREALLTHEJEWELSOFGOLCONDA \\
+AWAITINGMEONMYSOLUTIONOFTHISENIGMA, I AMQUITESURE \\
+THATISHOULDBEUNABLETOEARNTHEM. ANDYET, "SAIDLEGRAND, \\
+"THESOLUTIONISBYNOMEANSSODIFFICULTASYOUMIGHTBELED \\
+TOIMAGINEFROMTHEFIRSTHASTYINSPECTIONOFTHECHARACTERS." \\
+--EDGARALANPOEINTHEGOLD-BUG \\
+WELLD1,YOUCOMPLETEDALLOFTHECRYPTOCHALLENGES,ANDPROVEN \\
+YOURSELFTOHAVEAGOODUNDERSTANDINGOFFUNDAMENTALSKILLS \\
+INCRYPTANALYSIS. REMAININGISTOREPLACEYOURCRYPTANALYSIS \\
+HATFORTHATOFACRYPTOGRAPHERS. FOLLOWTHEURLBELOWTOTAKE \\
+PARTOFTHECRYPTOLABINSTRUCTIONS. \\
+HTTPS://LUNDGREN.PHD/IT754A/2023/L/3773.ZIP
+
+\bigskip
+
+{\bf In your own words, explain what you learned solving the challenge}
+\bigskip
+
+During the resolution of this challenge, I've gained a comprehensive understanding of the RSA encryption system, one of the most renowned public key cryptosystems. Delving into its mathematical backbone, primarily the way it utilizes the properties of prime numbers and their relation to modular arithmetic, has enlightened me about its strengths and vulnerabilities. The elegance of RSA is in how it can securely encrypt messages with a public key, yet decryption can only be accomplished with a corresponding private key, a principle I've seen in action firsthand through this challenge.
+
+\bigskip
+
+{\bf A short explanation of how you broke the cipher}
+\bigskip
+
+Given the nature of RSA, breaking the cipher essentially means obtaining the private key. In this particular challenge, by exploiting certain vulnerabilities and utilizing previously known aspects of RSA's mathematical properties, I managed to determine the private key \(d\). This, combined with the modulus \(n\), allowed for successful decryption of messages encrypted with the associated public key. Such an approach might involve processes like factoring the modulus or leveraging potential weaknesses in the key generation process, among others.
+
+\bigskip
+
+{\bf What factors facilitated your attack on this Crypto Challenge?}
+\bigskip
+
+Several elements played crucial roles in my ability to address this challenge. Firstly, the understanding of RSA's underlying mathematical principles, especially the significance of prime numbers in the generation of public and private keys. Secondly, the knowledge that RSA's security largely relies on the difficulty of factoring large composite numbers was essential. By recognizing potential pitfalls or shortcuts in the key generation or encryption process, I was better positioned to uncover the decryption key.
+
+\bigskip
+
+{\bf Proof:} \url{https://github.com/robmind/SVQ3NTRB/tree/main/Crypto_Challenge_4}
+\bigskip
+
+\end{document}

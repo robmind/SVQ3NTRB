@@ -1,0 +1,74 @@
+\documentclass[12pt]{amsart}
+
+\addtolength{\hoffset}{-2.25cm}
+\addtolength{\textwidth}{4.5cm}
+\addtolength{\voffset}{-2.5cm}
+\addtolength{\textheight}{5cm}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{15pt}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks = true, linkcolor = black, citecolor = black, final]{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+\newcommand{\ds}{\displaystyle}
+\DeclareMathOperator{\sech}{sech}
+\setlength{\parindent}{0in}
+\pagestyle{empty}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\scshape IT754A} \hfill {\scshape \large Crypto Challenge 3} \hfill {\scshape Hakan Ilgar}
+
+\smallskip
+\hrule
+\bigskip
+\bigskip
+
+{\bf Readable cleartext (i.e., formatted with blank spaces, dashes, numbers, and so on)}
+\bigskip
+
+VKORETSTOREMAINSECRETPASTTHEENDOFYOURLIFEEXPECTANCY, \\
+THEN,INORDERTOCHOOSEAKEYLENGTH,YOUHAVETOBEAFUTURIST. \\
+-NEALSTEPHENEONINCRYPTONOMICON \\
+NEXTCHALLENGE:HTTPS://LUNDGREN.PHD/IT754A/2023/F/2701.ZIP
+
+\bigskip
+
+{\bf In your own words, explain what you learned solving the challenge}
+
+\bigskip
+
+This challenge taught me the intricacies of XOR encryption and its vulnerabilities when used with a repetitive key. Leveraging a partial known plaintext allowed for a more efficient decryption attempt.
+
+\bigskip
+
+{\bf A short explanation of how you broke the cipher}
+
+\bigskip
+
+By using a repetitive key and XOR operation, I was able to decrypt the message. I leveraged the given plaintext snippet, "A One-Time Mistake", and used it as a basis for a brute-force approach. Iteratively trying different key lengths, I managed to decrypt a significant portion of the original message.
+
+\bigskip
+
+{\bf What factors facilitated your attack on this Crypto Challenge?}
+
+\bigskip
+
+The repetitive use of the key was the primary vulnerability in the encryption method. The XOR operation's properties, combined with the known partial plaintext, provided enough insight to break the cipher. Also, understanding the patterns and structure of the encrypted message proved beneficial.
+
+\bigskip
+
+{\bf Proof:} \url{https://github.com/robmind/SVQ3NTRB/tree/main/Crypto_Challenge_3}
+\bigskip
+
+\end{document}
